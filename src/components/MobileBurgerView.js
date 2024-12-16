@@ -30,8 +30,6 @@ library.add(faMagnifyingGlass, faBars);
 const MobileBurgerView = () => {
   const dispatch = useDispatch();
   const { showMobileMenu, currentPage } = useSelector((state) => state.menu);
-  console.log(showMobileMenu);
-
   return (
     <div
       className={`${showMobileMenu ? "openMobilePage" : "closeMobilePage"
